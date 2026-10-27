@@ -66,9 +66,17 @@ td.u{color:var(--coral2);font-weight:700}td.c{color:#1c7a52;font-weight:700}
 ol.steps{padding-left:22px}ol.steps li{margin:8px 0}
 details{border:1px solid var(--line);border-radius:12px;padding:12px 18px;margin:10px 0;background:#fffdf9}
 summary{cursor:pointer;font-weight:700}
-.areas{background:linear-gradient(135deg,#e6f2fb,#e5f6ee);border-radius:18px;padding:26px;margin:36px 0}
-.areas h2{margin:0 0 8px;font-size:24px}
-.chips{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 18px;padding:0;list-style:none}
+.areas{background:linear-gradient(135deg,#e6f2fb,#e5f6ee);border-radius:20px;padding:30px 28px;margin:40px 0;border:1px solid #cfe3f2}
+.areas h2{margin:0 0 8px;font-size:26px}
+.areas>p{margin:6px 0 18px}
+.area-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px;margin:0 0 20px;padding:0;list-style:none}
+.area-grid li{margin:0}
+.area-grid a{display:flex;align-items:center;gap:12px;background:#fff;border:1px solid #cfe3f2;border-radius:14px;padding:14px 16px;text-decoration:none;color:#1b2433;font-weight:700;font-size:16px;line-height:1.35;box-shadow:0 4px 14px rgba(29,98,168,.08);transition:transform .15s,box-shadow .15s,border-color .15s}
+.area-grid a:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(29,98,168,.16);border-color:var(--coral)}
+.area-grid .pin{flex:none;width:34px;height:34px;border-radius:50%;background:var(--sun);color:var(--coral2);display:grid;place-items:center;font-size:16px}
+.area-grid .arr{margin-left:auto;color:var(--coral);font-size:18px}
+.more-h{font:700 16px Georgia,serif;margin:6px 0 0;color:#1b2433}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 18px;padding:0;list-style:none}
 .chips li{background:#fff;border-radius:999px;padding:6px 16px;font-size:15px;font-weight:600;border:1px solid #cfe3f2}
 .cta{background:linear-gradient(135deg,#fff3cf,#ffe0d4);border-radius:18px;padding:30px;text-align:center;margin:36px 0}
 .cta h2{margin:0 0 8px}.cta p{margin:6px 0 16px}
@@ -90,7 +98,7 @@ aside .sticky{position:sticky;top:16px;display:grid;gap:18px}
 footer{background:#27303f;color:#e9edf4;font-size:15px}
 footer .w{padding-top:34px;padding-bottom:34px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px}
 footer a{color:#ffd9b8}footer h4{margin:0 0 8px;font:700 17px Georgia;color:#fff}footer p{margin:4px 0}
-@media(max-width:900px){.layout{grid-template-columns:1fr;margin-top:-60px}aside{order:-1}aside .sticky{position:static}.call{display:none}article{padding:26px 20px}body{font-size:17px}}
+@media(max-width:900px){.layout{grid-template-columns:1fr;margin-top:-60px}aside{order:-1}aside .sticky{position:static}.call{display:none}article{padding:26px 20px}body{font-size:17px}.areas{padding:24px 18px}}
 </style>
 </head>
 <body>
@@ -140,7 +148,7 @@ footer a{color:#ffd9b8}footer h4{margin:0 0 8px;font:700 17px Georgia;color:#fff
 <figure><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH4hegos5EqEWHm1XilD1FFyDHNrxsiec0M4ReEk4hbA&s=10" alt="Home appliances including a washer, dryer and kitchen units that may need repair" loading="lazy" width="1280" height="720"><figcaption>Kitchen and laundry appliances all benefit from routine checks.</figcaption></figure>
 
 <h2 class="n" id="s6">Oven and Stove Repair in Toronto: Heating and Ignition Faults</h2>
-<p>Ovens and stoves fail in different ways. Electric models may have a burnt-out heating element, a failing thermostat or a faulty control. Gas models may have igniter trouble, uneven flames or burners that click without lighting.</p>
+<p>Ovens and stoves fail in different ways. Electric models may have a burnt-out heating element, a failing thermostat or a faulty control. Gas models may have igniter trouble, uneven flames or burners that click without lighting. For more on this, see our page on <a href="https://certifiedmechanicalservice.com/oven-repair-in-toronto/">oven repair in Toronto</a>.</p>
 <div class="box warn"><strong class="t">Warning: gas smells are an emergency</strong><p>If you smell gas, don't use switches, lighters or the appliance. Open windows if it is safe, leave the home and call your gas utility's emergency line or 911 from outside. Don't try to repair gas parts yourself.</p></div>
 
 <h2 class="n" id="s7">Urgent vs. Can Wait: How to Prioritize Appliance Problems</h2>
@@ -202,8 +210,17 @@ footer a{color:#ffd9b8}footer h4{margin:0 0 8px;font:700 17px Georgia;color:#fff
 
 <section class="areas" aria-labelledby="areas-h">
 <h2 id="areas-h">Service Areas: Where We Help</h2>
-<p>Certified Mechanical offers appliance repair in Toronto and across the Greater Toronto Area, including these communities:</p>
-<ul class="chips"><li>Toronto</li><li>Etobicoke</li><li>Scarborough</li><li>Mississauga</li><li>Brampton</li><li>Vaughan</li><li>Markham</li><li>Richmond Hill</li><li>Oakville</li><li>Surrounding GTA</li></ul>
+<p>Certified Mechanical offers appliance repair in Toronto and across the Greater Toronto Area. Choose your city below to see local service details:</p>
+<ul class="area-grid">
+<li><a href="https://certifiedmechanicalservice.com/appliance-repair-in-mississauga/"><span class="pin" aria-hidden="true">📍</span>Mississauga, ON<span class="arr" aria-hidden="true">→</span></a></li>
+<li><a href="https://certifiedmechanicalservice.com/appliance-repair-in-oakville/"><span class="pin" aria-hidden="true">📍</span>Oakville, Ontario<span class="arr" aria-hidden="true">→</span></a></li>
+<li><a href="https://certifiedmechanicalservice.com/appliance-repair-in-richmond-hill/"><span class="pin" aria-hidden="true">📍</span>Richmond Hill, Ontario<span class="arr" aria-hidden="true">→</span></a></li>
+<li><a href="https://certifiedmechanicalservice.com/appliance-repair-in-etobicoke/"><span class="pin" aria-hidden="true">📍</span>Etobicoke, ON<span class="arr" aria-hidden="true">→</span></a></li>
+<li><a href="https://certifiedmechanicalservice.com/appliance-repair-in-brampton/"><span class="pin" aria-hidden="true">📍</span>Brampton, ON<span class="arr" aria-hidden="true">→</span></a></li>
+<li><a href="https://certifiedmechanicalservice.com/oven-repair-in-toronto/"><span class="pin" aria-hidden="true">📍</span>Toronto, ON<span class="arr" aria-hidden="true">→</span></a></li>
+</ul>
+<p class="more-h">We also serve:</p>
+<ul class="chips"><li>Scarborough</li><li>Vaughan</li><li>Markham</li><li>Surrounding GTA</li></ul>
 <p>Don't see your area? Call to confirm availability.</p>
 <a class="btn" href="tel:18664924679">Call 1-866-492-4679</a> <a class="btn alt" href="https://certifiedmechanicalservice.com/contact-us/">Check My Area</a>
 </section>
@@ -222,6 +239,7 @@ footer a{color:#ffd9b8}footer h4{margin:0 0 8px;font:700 17px Georgia;color:#fff
 <div class="box rel" style="background:var(--sky)"><strong class="t">Related from Certified Mechanical</strong><ul>
 <li><a href="https://certifiedmechanicalservice.com/washer-repair-in-toronto/">Washer repair in Toronto</a></li>
 <li><a href="https://certifiedmechanicalservice.com/dryer-repair-in-toronto/">Dryer repair in Toronto</a></li>
+<li><a href="https://certifiedmechanicalservice.com/oven-repair-in-toronto/">Oven repair in Toronto</a></li>
 <li><a href="https://certifiedmechanicalservice.com/">Certified Mechanical home page</a></li></ul></div>
 
 <div class="author"><div class="av" aria-hidden="true">D</div><p><strong>About the author:</strong> Daniel Whitfield writes practical home-maintenance guides for Certified Mechanical.</p></div>
@@ -237,7 +255,7 @@ footer a{color:#ffd9b8}footer h4{margin:0 0 8px;font:700 17px Georgia;color:#fff
 <footer><div class="w">
 <div><h4>Certified Mechanical</h4><p>Appliance repair in Toronto &amp; the GTA.</p><p>234 Birmingham St Unit 3, Etobicoke, ON M8V 2C8</p></div>
 <div><h4>Contact</h4><p><a href="tel:18664924679">1-866-492-4679</a></p><p><a href="mailto:service@certifiedmechanical.ca">service@certifiedmechanical.ca</a></p></div>
-<div><h4>Links</h4><p><a href="https://certifiedmechanicalservice.com/">Home</a></p><p><a href="https://certifiedmechanicalservice.com/washer-repair-in-toronto/">Washer Repair</a></p><p><a href="https://certifiedmechanicalservice.com/dryer-repair-in-toronto/">Dryer Repair</a></p><p><a href="https://www.americasmallbiz.com/etobicoke/consumer-services/certified-mechanical">America's Small Biz listing</a></p></div>
+<div><h4>Links</h4><p><a href="https://certifiedmechanicalservice.com/">Home</a></p><p><a href="https://certifiedmechanicalservice.com/washer-repair-in-toronto/">Washer Repair</a></p><p><a href="https://certifiedmechanicalservice.com/dryer-repair-in-toronto/">Dryer Repair</a></p><p><a href="https://certifiedmechanicalservice.com/oven-repair-in-toronto/">Oven Repair</a></p><p><a href="https://www.americasmallbiz.com/etobicoke/consumer-services/certified-mechanical">America's Small Biz listing</a></p></div>
 </div></footer>
 
 <script>
